@@ -35,7 +35,7 @@ public class ImageService {
         Image image = imageRepository2.findById(id).get();
 
         //find the dimension of the stirng
-        String imageDimension = image.getDimension();
+        String imageDimension = image.getDimensions();
 
         //create a string array for image dimensions
         String[] imgarray = imageDimension.split("X");
